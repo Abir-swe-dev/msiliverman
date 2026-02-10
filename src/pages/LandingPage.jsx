@@ -12,19 +12,19 @@ export function LandingPage() {
         style={{
           backgroundImage: `url(${FrameImage})`
         }}>
-          
+
         {/* Top gradient for header/nav section */}
         <div
           className="absolute top-0 left-0 right-0 h-[300px]"
           style={{
             background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, transparent 100%)'
           }} />
-          
-        {/* Very light overlay only for slight text contrast */}
+
+        {/* Light dark shadow overlay for better text contrast */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'rgba(0, 0, 0, 0.05)'
+            background: 'rgba(0, 0, 0, 0.25)'
           }} />
       </div>
 

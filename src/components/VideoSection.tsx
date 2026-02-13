@@ -42,22 +42,22 @@ export function VideoSection() {
       </div>
 
       {/* Testimonials */}
-      <div className="space-y-4 py-2">
+      <div className="space-y-4 py-4">
         <div className="space-y-1">
-          <div className="flex text-[#FFD700] text-sm">★★★★★</div>
-          <p className="text-white text-[13px] font-medium leading-tight italic" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          <div className="flex text-[#FFD700] text-[10px] tracking-[2px]">★★★★★</div>
+          <p className="text-white text-[13px] font-medium leading-tight italic opacity-90" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
             "No joke, this has literally changed my life."
           </p>
         </div>
         <div className="space-y-1">
-          <div className="flex text-[#FFD700] text-sm">★★★★★</div>
-          <p className="text-white text-[13px] font-medium leading-tight italic" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          <div className="flex text-[#FFD700] text-[10px] tracking-[2px]">★★★★★</div>
+          <p className="text-white text-[13px] font-medium leading-tight italic opacity-90" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
             "Without the constant nag of that high squeal in my head, my BP has gone down!"
           </p>
         </div>
         <div className="space-y-1">
-          <div className="flex text-[#FFD700] text-sm">★★★★★</div>
-          <p className="text-white text-[13px] font-medium leading-tight italic" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          <div className="flex text-[#FFD700] text-[10px] tracking-[2px]">★★★★★</div>
+          <p className="text-white text-[13px] font-medium leading-tight italic opacity-90" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
             "I'm now in a constant state of deep relaxation and I've never felt better."
           </p>
         </div>

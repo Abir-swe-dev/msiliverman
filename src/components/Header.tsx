@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function Header() {
   return (
     <header className="py-6 flex justify-between items-start">
@@ -8,9 +6,9 @@ export function Header() {
           <h1 className="font-heading text-[38px] md:text-[45px] font-black text-white tracking-tighter leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             tinnitus<span className="text-[#8B8DFF] font-medium">relief</span>
           </h1>
-          <span className="text-white text-[12px] opacity-70 mb-1">by earvana</span>
+          <span className="text-white text-[12px] opacity-70 mb-1 font-medium">by earvana</span>
         </div>
-        <p className="font-body text-white text-[11px] uppercase tracking-[0.2em] mt-1 opacity-80" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+        <p className="font-body text-white text-[10px] uppercase tracking-[0.25em] mt-1 opacity-60 font-medium" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
           professional masking solution
         </p>
       </div>

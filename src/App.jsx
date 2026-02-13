@@ -8,16 +8,6 @@ export function App() {
 
   return (
     <>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap');
-        
-        body {
-          font-family: 'Inter', sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #0E2A1F;
-        }
-      `}</style>
 
       {currentPage === 'landing' && (
         <LandingPage onNavigate={(page) => setCurrentPage(page)} />

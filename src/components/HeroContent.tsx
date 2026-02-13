@@ -6,10 +6,10 @@ export function HeroContent() {
       {/* Main Headline */}
       <div className="mb-4">
         <h1 className="font-heading text-[34px] md:text-[42px] font-bold leading-[1.05] tracking-tighter" style={{ textShadow: '2px 2px 5px rgba(0,0,0,0.8)' }}>
-          <span className="text-[#89FF00]">750 Million people</span>{' '}
-          <span className="text-[#81FF00]">suffer from</span>
+          <span className="text-[#8FFF20]">750 Million people</span>{' '}
+          <span className="text-[#8FFF20]">suffer from</span>
           <br />
-          <span className="text-[#7CFF00] font-black italic">ringing in the ears.</span>
+          <span className="text-[#8FFF20] font-black italic">ringing in the ears.</span>
         </h1>
         <p className="font-body text-white text-[18px] md:text-[20px] mt-1 font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           Are <span className="font-bold underline">you</span> one of them?
@@ -21,9 +21,9 @@ export function HeroContent() {
         <p className="font-body text-white text-[15px] leading-snug font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           <span className="font-black">TINNITUS</span> — to date — is not curable.
           <br />
-          <span className="text-[14px] font-semibold text-black" style={{ textShadow: 'none' }}>But new research shows significant success</span>
+          <span className="text-[14px] font-semibold text-[#2D2D2D]" style={{ textShadow: 'none' }}>But new research shows significant success</span>
           <br />
-          <span className="text-[14px] font-semibold text-black" style={{ textShadow: 'none' }}>in a alternative solution. See and preview below:</span>
+          <span className="text-[14px] font-semibold text-[#2D2D2D]" style={{ textShadow: 'none' }}>in a alternative solution. See and preview below:</span>
         </p>
 
         <h2 className="font-body text-white text-[18px] md:text-[20px] font-bold leading-tight" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
@@ -66,11 +66,11 @@ export function HeroContent() {
 
         {/* The NEW Way Section */}
         <div className="space-y-1 mt-6">
-          <h3 className="font-body text-[#7CFF00] font-bold text-[17px] md:text-[19px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          <h3 className="font-body text-[#8FFF20] font-bold text-[17px] md:text-[19px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             The NEW way:{' '}
             <span className="font-normal">Replace the annoying ringing with</span>
           </h3>
-          <p className="font-body text-[#7CFF00] text-[17px] md:text-[19px] leading-tight font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          <p className="font-body text-[#8FFF20] text-[17px] md:text-[19px] leading-tight font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             a specialized nature soundtrack - digitally designed
             <br />
             to mask the most common tinnitus frequencies.
@@ -84,10 +84,10 @@ export function HeroContent() {
           the innovative new
         </p>
         <div className="flex items-baseline gap-1 mt-[-8px]">
-          <span className="font-heading text-[48px] md:text-[54px] font-black text-[#7CFF00] lowercase tracking-tighter" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9)' }}>
+          <span className="font-heading text-[42px] md:text-[48px] font-black text-[#B5FF00] lowercase tracking-tighter" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9)' }}>
             tinnitus relief
           </span>
-          <span className="font-heading text-[48px] md:text-[54px] font-medium text-[#7CFF00] lowercase tracking-tighter" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9)' }}>
+          <span className="font-heading text-[42px] md:text-[48px] font-medium text-[#B5FF00] lowercase tracking-tighter" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9)' }}>
             app
           </span>
         </div>
@@ -99,14 +99,14 @@ export function HeroContent() {
       {/* Take a Listen Section */}
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-2">
-          <h3 className="font-body text-[32px] text-black font-bold tracking-tight lowercase" style={{ textShadow: 'none' }}>
+          <h3 className="font-body text-[32px] text-[#2D2D2D] font-bold tracking-tight lowercase" style={{ textShadow: 'none' }}>
             take a listen:
           </h3>
-          <div className="h-[2px] w-48 bg-gradient-to-r from-white/80 via-[#7CFF00] to-transparent relative">
-            <div className="absolute right-0 -top-[5px] w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#7CFF00] border-b-[6px] border-b-transparent shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"></div>
+          <div className="h-[2px] w-48 bg-gradient-to-r from-white/80 via-[#8FFF20] to-transparent relative">
+            <div className="absolute right-0 -top-[5px] w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#8FFF20] border-b-[6px] border-b-transparent shadow-[2px_2px_4px_rgba(0,0,0,0.5)]"></div>
           </div>
         </div>
-        <p className="font-body text-[#7CFF00] text-[16px] font-bold mb-6 lowercase italic" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+        <p className="font-body text-[#8FFF20] text-[16px] font-bold mb-6 lowercase italic" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           ( best in headphones or ear buds )
         </p>
 

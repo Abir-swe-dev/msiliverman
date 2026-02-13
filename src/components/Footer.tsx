@@ -1,4 +1,8 @@
-export function Footer() {
+interface FooterProps {
+    onNavigate?: (page: string) => void;
+}
+
+export function Footer({ onNavigate }: FooterProps) {
     return (
         <footer className="w-full relative bg-gradient-to-t from-black via-[#05110B] to-transparent pt-32 pb-12">
             <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
@@ -13,9 +17,19 @@ export function Footer() {
                     </div>
 
                     <div className="flex gap-8 text-[11px] font-medium text-white/40 uppercase tracking-widest">
-                        <a href="#" className="hover:text-[#7CFF00] transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-[#7CFF00] transition-colors">Terms of Service</a>
-                        <a href="#" className="hover:text-[#7CFF00] transition-colors">Support</a>
+                        <button
+                            onClick={() => onNavigate?.('privacy')}
+                            className="hover:text-[#8FFF20] transition-colors uppercase tracking-widest"
+                        >
+                            Privacy Policy
+                        </button>
+                        <button
+                            onClick={() => onNavigate?.('terms')}
+                            className="hover:text-[#8FFF20] transition-colors uppercase tracking-widest"
+                        >
+                            Terms of Service
+                        </button>
+                        <a href="#" className="hover:text-[#8FFF20] transition-colors">Support</a>
                     </div>
 
                     <p className="text-[10px] text-white/20 font-light">

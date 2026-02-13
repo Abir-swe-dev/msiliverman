@@ -4,7 +4,7 @@ import { VideoSection } from '../components/VideoSection';
 import { Footer } from '../components/Footer';
 import FrameImage from '../assets/Frame.jpg';
 
-export function LandingPage() {
+export function LandingPage({ onNavigate }) {
   return (
     <div className="min-h-screen w-full relative overflow-x-hidden bg-[#0E2A1F]">
       {/* Background Image - Full width display */}
@@ -47,7 +47,7 @@ export function LandingPage() {
           </main>
         </div>
 
-        <Footer />
+        <Footer onNavigate={onNavigate} />
       </div>
     </div>);
 }

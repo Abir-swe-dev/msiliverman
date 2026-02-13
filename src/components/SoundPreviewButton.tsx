@@ -7,7 +7,7 @@ interface SoundPreviewButtonProps {
 
 export function SoundPreviewButton({ title, subtitle }: SoundPreviewButtonProps) {
   return (
-    <button className="w-full flex items-center justify-between p-4 bg-[#4A9370]/30 backdrop-blur-md rounded-lg border border-[#4A9370]/40 group hover:bg-[#4A9370]/50 transition-all duration-300">
+    <button className="w-full flex items-center justify-between p-4 bg-[#4A9370]/30 backdrop-blur-md rounded-lg border border-[#4A9370]/40 group hover:bg-[#4A9370]/50 transition-all duration-300 shadow-[0_4px_20px_rgba(255,255,255,0.2),0_0_10px_rgba(255,255,255,0.15)]">
       <div className="flex items-center gap-4">
         <div className="w-12 h-12 bg-[#4A9370]/40 rounded flex items-center justify-center border border-[#4A9370]/60">
           <Play className="w-6 h-6 text-white fill-white ml-1" />

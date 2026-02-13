@@ -1,42 +1,31 @@
+import React from 'react';
 
-import { Menu } from 'lucide-react';
 export function Header() {
   return (
-    <header className="w-full flex justify-between items-start pt-6 pb-6">
-      {/* Logo Section */}
+    <header className="py-6 flex justify-between items-start">
       <div className="flex flex-col">
-        <div className="flex items-baseline gap-0">
-          <h1 className="font-logo text-4xl font-semibold tracking-tight lowercase text-white" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-            tinnitus
+        <div className="flex items-baseline gap-1">
+          <h1 className="font-heading text-[38px] md:text-[45px] font-black text-white tracking-tighter leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            tinnitus<span className="text-[#8B8DFF] font-medium">relief</span>
           </h1>
-          <span className="font-logo text-4xl font-medium italic tracking-tight lowercase text-[#5B7FFF]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-            relief
-          </span>
+          <span className="text-white text-[12px] opacity-70 mb-1">by earvana</span>
         </div>
-        <p className="text-[9px] tracking-[0.15em] text-white/50 mt-1 font-body font-light lowercase" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+        <p className="font-body text-white text-[11px] uppercase tracking-[0.2em] mt-1 opacity-80" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
           professional masking solution
         </p>
       </div>
 
-      {/* Right Section */}
-      <div className="flex items-start gap-8">
-        <div className="text-right">
-          <p className="text-sm text-white/70 font-light" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-            by earvana
-          </p>
-        </div>
-        <button className="text-white hover:text-[#7CFF00] transition-colors">
-          <Menu className="w-8 h-8 stroke-[1.5]" style={{ filter: 'drop-shadow(2px 2px 2px rgba(0,0,0,0.8))' }} />
+      <div className="pt-2 flex flex-col items-end">
+        <button className="flex flex-col gap-1.5 p-2 mr-[-8px]">
+          <div className="w-10 h-[2.5px] bg-white opacity-80"></div>
+          <div className="w-10 h-[2.5px] bg-white opacity-80"></div>
+          <div className="w-10 h-[2.5px] bg-white opacity-80"></div>
         </button>
+        <div className="text-white text-[10px] text-right mt-4 opacity-60 leading-tight" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          endorsed by Harvard Research<br />
+          and audiologists
+        </div>
       </div>
-      
-      {/* Bottom Right Text */}
-      <div className="absolute top-32 right-12">
-        <p className="text-[10px] text-white/60 font-light leading-tight text-right" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-          endorsed by Harvard Research<br />and audiologists
-        </p>
-      </div>
-
-    </header>);
-
+    </header>
+  );
 }

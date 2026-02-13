@@ -1,65 +1,76 @@
-import { ArrowRight } from 'lucide-react';
 import { DeviceMockups } from './DeviceMockups';
+
 export function HeroContent() {
   return (
-    <div className="flex flex-col text-left max-w-xl">
+    <div className="flex flex-col text-left max-w-2xl px-4 lg:px-0">
       {/* Main Headline */}
-      <div className="mb-6">
-        <h2 className="font-heading text-[28px] font-semibold leading-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-          <span className="text-[#B8FF00]">750 Million people</span>{' '}
-          <span className="text-[#B8FF00]">suffer from</span>
+      <div className="mb-4">
+        <h1 className="font-heading text-[32px] md:text-[38px] font-bold leading-[1.1] tracking-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+          <span className="text-[#89FF00]">750 Million people</span>{' '}
+          <span className="text-[#81FF00]">suffer from</span>
           <br />
-          <span className="text-[#B8FF00]">ringing in the ears.</span>
-        </h2>
-        <p className="font-body text-white text-base mt-2 font-light" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
-          Are <span className="font-semibold">you</span> one of them?
+          <span className="text-[#7CFF00]">ringing in the ears.</span>
+        </h1>
+        <p className="font-body text-white text-[18px] md:text-[20px] mt-1 font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          Are <span className="font-bold underline">you</span> one of them?
         </p>
       </div>
 
       {/* Tinnitus Info */}
-      <div className="mb-6 space-y-3">
-        <p className="font-body text-white text-sm leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
-          <span className="font-bold uppercase">TINNITUS</span> — to date — is not curable.
+      <div className="mb-4 space-y-4">
+        <p className="font-body text-white text-[15px] leading-snug font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          <span className="font-black">TINNITUS</span> — to date — is not curable.
           <br />
-          But new research shows significant success
+          <span className="text-[14px] font-semibold opacity-90">But new research shows significant success</span>
           <br />
-          in a alternative solution. See and preview below:
+          <span className="text-[14px] font-semibold opacity-90">in a alternative solution. See and preview below:</span>
         </p>
 
-        <h3 className="font-body text-white text-base font-normal leading-tight mt-4" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+        <h2 className="font-body text-white text-[17px] md:text-[19px] font-bold leading-tight" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           ENT's and Audiologists recommend
           <br />
-          <span className="font-bold">masking,</span>{' '}
-          <span className="font-normal">a technique used for years.</span>
-        </h3>
+          <span className="text-[22px] md:text-[24px] font-black tracking-tight">masking,</span>{' '}
+          <span className="text-[16px] md:text-[18px] font-normal opacity-90">a technique used for years.</span>
+        </h2>
 
-        <p className="font-body text-white text-sm leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
-          <span className="font-bold">Masking</span> is the use of EXTERNAL sound,
+        <p className="font-body text-white text-[15px] leading-tight font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          Masking is the use of EXTERNAL sound,
           <br />
           to overshadow the INTERNAL ringing.
         </p>
       </div>
 
-      {/* Old Way vs New Way */}
-      <div className="mb-8 space-y-4">
-        <div>
-          <h4 className="font-body text-white font-normal text-base mb-1" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
-            The old way: <span className="font-bold uppercase">WHITE NOISE AUDIO</span>
-          </h4>
-          <p className="font-body text-gray-300 text-xs leading-tight max-w-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-            <span className="font-bold text-white">White noise</span> is the presence of ALL audio frequencies blasting at you simultaneously.
+      {/* The Old Way Section */}
+      <div className="mb-6 space-y-4">
+        <div className="space-y-1">
+          <h3 className="font-body text-white font-bold text-[17px] md:text-[19px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+            The old way: <span className="font-black uppercase tracking-wider">WHITE NOISE AUDIO</span>
+          </h3>
+          <p className="font-body text-white text-[13px] leading-tight font-bold opacity-95" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+            <span className="italic underline">White noise</span> is the presence of ALL audio frequencies
+            <br />
+            blasting at you simultaneously.
           </p>
-          <p className="font-body text-gray-400 text-xs mt-2 leading-tight max-w-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-            While it can be effective in drowning out your internal ringing, it is an extremely annoying sound; akin to standing behind a jet engine. Studies have shown a connection with listening to white noise and high blood pressure.
-          </p>
+          <div className="pt-2">
+            <p className="font-body text-white text-[13px] leading-[1.3] font-medium opacity-80 max-w-md" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+              While it can be effective in drowning out your internal ringing,
+              <br />
+              it is an extremely annoying sound; akin to standing behind a jet engine.
+              <br />
+              Studies have shown a connection with listening to white noise and
+              <br />
+              high blood pressure.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h4 className="font-body text-[#B8FF00] font-normal text-base mb-1" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+        {/* The NEW Way Section */}
+        <div className="space-y-1 mt-6">
+          <h3 className="font-body text-[#7CFF00] font-bold text-[17px] md:text-[19px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             The NEW way:{' '}
             <span className="font-normal">Replace the annoying ringing with</span>
-          </h4>
-          <p className="font-body text-[#B8FF00] text-base leading-tight font-normal" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          </h3>
+          <p className="font-body text-[#7CFF00] text-[17px] md:text-[19px] leading-tight font-bold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             a specialized nature soundtrack - digitally designed
             <br />
             to mask the most common tinnitus frequencies.
@@ -68,55 +79,55 @@ export function HeroContent() {
       </div>
 
       {/* App Intro */}
-      <div className="mb-10">
-        <p className="font-body text-white text-xl font-light lowercase mb-0" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+      <div className="mb-8">
+        <p className="font-body text-white text-[20px] font-light lowercase mb-0 opacity-90" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           the innovative new
         </p>
-        <div className="flex items-baseline gap-1">
-          <span className="font-heading text-[40px] font-semibold text-[#B8FF00] lowercase" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+        <div className="flex items-baseline gap-1 mt-[-8px]">
+          <span className="font-heading text-[48px] md:text-[54px] font-black text-[#7CFF00] lowercase tracking-tighter" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9)' }}>
             tinnitus relief
           </span>
-          <span className="font-heading text-[40px] font-normal text-[#B8FF00] lowercase" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+          <span className="font-heading text-[48px] md:text-[54px] font-medium text-[#7CFF00] lowercase tracking-tighter" style={{ textShadow: '3px 3px 6px rgba(0,0,0,0.9)' }}>
             app
           </span>
         </div>
-        <p className="font-body text-white text-lg font-normal mt-1" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
-          by <span className="font-semibold">earvana.</span>
+        <p className="font-body text-white text-[20px] font-medium mt-[-4px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+          by <span className="font-bold underline">earvana.</span>
         </p>
       </div>
 
-      {/* Take a Listen */}
-      <div className="mb-10">
+      {/* Take a Listen Section */}
+      <div className="mb-8">
         <div className="flex items-center gap-4 mb-2">
-          <h3 className="font-body text-2xl text-white font-normal tracking-tight lowercase" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+          <h3 className="font-body text-[32px] text-white font-bold tracking-tight lowercase" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             take a listen:
           </h3>
-          <div className="h-1 w-32 bg-gradient-to-r from-[#B8FF00] to-[#B8FF00] relative">
-            <div className="absolute -right-1 -top-1.5 w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-[#B8FF00] border-b-[6px] border-b-transparent"></div>
+          <div className="h-[2px] w-40 bg-gradient-to-r from-white to-[#00FFBF] relative">
+            <div className="absolute -right-1 -top-[5px] w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#00FFBF] border-b-[6px] border-b-transparent"></div>
           </div>
         </div>
-        <p className="font-body text-[#B8FF00] text-xs mb-6 lowercase" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+        <p className="font-body text-[#7CFF00] text-[16px] font-bold mb-6 lowercase italic" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           ( best in headphones or ear buds )
         </p>
 
-        <div className="space-y-2">
-          <p className="font-body text-white font-normal text-sm mb-2 lowercase" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+        <div className="space-y-4">
+          <p className="font-body text-white font-bold text-[16px] mb-2 lowercase" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             as you turn up the volume, you will likely notice:
           </p>
-          <ul className="space-y-1 font-body text-sm">
-            <li className="text-white flex items-start gap-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-              <span className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 flex-shrink-0"></span>
+          <ul className="space-y-2 font-body text-[15px] font-bold">
+            <li className="text-white flex items-center gap-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+              <span className="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
               <span className="lowercase">
                 the ringing{' '}
-                <span className="font-semibold">disappears</span>
+                <span className="font-black uppercase">disappears</span>
               </span>
             </li>
-            <li className="text-white flex items-start gap-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-              <span className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 flex-shrink-0"></span>
+            <li className="text-white flex items-center gap-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+              <span className="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
               <span className="lowercase">uncanny realism: full immersion to the environment</span>
             </li>
-            <li className="text-white flex items-start gap-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-              <span className="w-1.5 h-1.5 bg-white rounded-full mt-1.5 flex-shrink-0"></span>
+            <li className="text-white flex items-center gap-2" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+              <span className="w-1.5 h-1.5 bg-white flex-shrink-0"></span>
               <span className="lowercase">deep relaxation</span>
             </li>
           </ul>
@@ -126,16 +137,16 @@ export function HeroContent() {
       {/* Final CTA */}
       <div className="mb-8">
         <div className="flex items-center gap-4">
-          <h3 className="font-heading text-xl font-bold text-[#FFD700] uppercase tracking-wide" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+          <h3 className="font-heading text-[24px] font-black text-[#FFD700] uppercase tracking-widest" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             TRY IT FOR 7 days:: FREE
           </h3>
-          <div className="h-1 w-16 bg-[#FFD700] relative">
-            <div className="absolute -right-1 -top-1.5 w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-[#FFD700] border-b-[6px] border-b-transparent"></div>
+          <div className="h-[2px] w-20 bg-[#FFD700] relative">
+            <div className="absolute -right-1 -top-[5px] w-0 h-0 border-t-[6px] border-t-transparent border-l-[12px] border-l-[#FFD700] border-b-[6px] border-b-transparent"></div>
           </div>
         </div>
       </div>
 
       <DeviceMockups />
-    </div>);
-
+    </div>
+  );
 }

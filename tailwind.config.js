@@ -1,7 +1,8 @@
-module.exports = {content: [
-  './index.html',
-  './src/**/*.{js,ts,jsx,tsx}'
-],
+module.exports = {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: "selector",
   theme: {
     container: {
@@ -18,6 +19,24 @@ module.exports = {content: [
         body: ["Open Sans", "sans-serif"],
       },
       colors: {
+        // Tinnitus Relief Design System - Forest + Mist Theme
+        forestDark: '#0b1a12',
+        forestMid: '#1f3a2b',
+        mistGreen: '#6fa28c',
+        softFog: '#b7d2c6',
+
+        // Accent Colors
+        neonGreen: '#9dff00',
+        electricBlue: '#2d6cff',
+
+        // Text Colors
+        softWhite: '#e6f2ec',
+        mutedGray: '#9bb3aa',
+
+        // Special Colors
+        gold: '#f5c542',
+
+        // Original shadcn/ui colors (preserved for compatibility)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

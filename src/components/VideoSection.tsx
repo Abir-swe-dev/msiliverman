@@ -4,7 +4,7 @@ import { SoundPreviewButton } from './SoundPreviewButton';
 
 export function VideoSection() {
   return (
-    <div className="flex flex-col gap-6 w-full max-w-[420px] mx-auto lg:mx-0">
+    <div className="flex flex-col gap-6 w-full max-w-[380px] mx-auto lg:mx-0">
       {/* Video Player */}
       <div className="relative aspect-video w-full bg-[#1A1A1A] rounded-sm border-[1.5px] border-[#4A4A4A] overflow-hidden shadow-xl group cursor-pointer">
         {/* Play Button Center */}
@@ -45,19 +45,19 @@ export function VideoSection() {
       <div className="space-y-4 py-4">
         <div className="space-y-1">
           <div className="flex text-[#FFD700] text-[10px] tracking-[2px]">★★★★★</div>
-          <p className="text-white text-[13px] font-medium leading-tight italic opacity-90" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          <p className="text-black text-[13px] font-medium leading-tight italic" style={{ textShadow: 'none' }}>
             "No joke, this has literally changed my life."
           </p>
         </div>
         <div className="space-y-1">
           <div className="flex text-[#FFD700] text-[10px] tracking-[2px]">★★★★★</div>
-          <p className="text-white text-[13px] font-medium leading-tight italic opacity-90" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          <p className="text-black text-[13px] font-medium leading-tight italic" style={{ textShadow: 'none' }}>
             "Without the constant nag of that high squeal in my head, my BP has gone down!"
           </p>
         </div>
         <div className="space-y-1">
           <div className="flex text-[#FFD700] text-[10px] tracking-[2px]">★★★★★</div>
-          <p className="text-white text-[13px] font-medium leading-tight italic opacity-90" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+          <p className="text-black text-[13px] font-medium leading-tight italic" style={{ textShadow: 'none' }}>
             "I'm now in a constant state of deep relaxation and I've never felt better."
           </p>
         </div>

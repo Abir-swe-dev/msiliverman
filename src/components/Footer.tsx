@@ -30,7 +30,12 @@ export function Footer({ }: FooterProps) {
                         >
                             Terms of Service
                         </Link>
-                        <a href="#" className="hover:text-[#8FFF20] transition-colors">Support</a>
+                        <Link
+                            to="/faq"
+                            className="hover:text-[#8FFF20] transition-colors uppercase tracking-widest"
+                        >
+                            FAQ
+                        </Link>
                     </div>
 
                     <p className="text-[10px] text-white/20 font-light">

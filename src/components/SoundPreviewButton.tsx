@@ -1,20 +1,23 @@
 import { Play, Pause } from 'lucide-react';
-import { useState, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 
 interface SoundPreviewButtonProps {
   title: string;
   subtitle: string;
   audioSrc?: string;
+  isActive: boolean;
+  onToggle: () => void;
 }
 
-export function SoundPreviewButton({ title, subtitle, audioSrc }: SoundPreviewButtonProps) {
-  const [isPlaying, setIsPlaying] = useState(false);
+export function SoundPreviewButton({ title, subtitle, audioSrc, isActive, onToggle }: SoundPreviewButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (audioSrc) {
       audioRef.current = new Audio(audioSrc);
-      audioRef.current.onended = () => setIsPlaying(false);
+      audioRef.current.onended = () => {
+        if (isActive) onToggle();
+      };
     }
     return () => {
       if (audioRef.current) {
@@ -24,33 +27,42 @@ export function SoundPreviewButton({ title, subtitle, audioSrc }: SoundPreviewBu
     };
   }, [audioSrc]);
 
-  const togglePlay = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  useEffect(() => {
     if (!audioRef.current) return;
 
-    if (isPlaying) {
-      audioRef.current.pause();
+    if (isActive) {
+      audioRef.current.play().catch(err => console.error("Audio playback failed:", err));
     } else {
-      audioRef.current.play();
+      audioRef.current.pause();
     }
-    setIsPlaying(!isPlaying);
+  }, [isActive]);
+
+  const handleToggle = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onToggle();
   };
 
   return (
     <button
-      onClick={togglePlay}
-      className="w-full flex items-center justify-between p-4 bg-[#4A9370]/30 backdrop-blur-md rounded-lg border border-[#4A9370]/40 group hover:bg-[#4A9370]/50 transition-all duration-300 shadow-[0_4px_20px_rgba(255,255,255,0.2),0_0_10px_rgba(255,255,255,0.15)]"
+      onClick={handleToggle}
+      className={`w-full flex items-center justify-between p-4 backdrop-blur-lg rounded-lg border-2 transition-all duration-300 shadow-[0_4px_25px_rgba(0,0,0,0.3)] ${isActive
+          ? 'bg-[#4A9370]/60 border-[#9DFF00] shadow-[0_0_20px_rgba(157,255,0,0.3)]'
+          : 'bg-[#3d7a5b]/40 border-[#4A9370]/60 hover:bg-[#4A9370]/50 hover:border-[#9DFF00]/40'
+        }`}
     >
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 bg-[#4A9370]/40 rounded flex items-center justify-center border border-[#4A9370]/60">
-          {isPlaying ? (
-            <Pause className="w-6 h-6 text-white fill-white" />
+        <div className={`w-12 h-12 backdrop-blur-md rounded-md flex items-center justify-center border transition-colors ${isActive ? 'bg-[#9DFF00]/20 border-[#9DFF00]/40' : 'bg-white/10 border-white/20'
+          }`}>
+          {isActive ? (
+            <Pause className="w-6 h-6 text-[#9DFF00] fill-[#9DFF00]" />
           ) : (
             <Play className="w-6 h-6 text-white fill-white ml-1" />
           )}
         </div>
         <div className="text-left text-white">
-          <div className="text-[20px] font-bold leading-none">{title} : <span className="font-normal opacity-80">{subtitle}</span></div>
+          <div className="text-[20px] font-bold leading-none">
+            {title} : <span className={`font-normal transition-opacity ${isActive ? 'opacity-100 text-[#9DFF00]' : 'opacity-80'}`}>{subtitle}</span>
+          </div>
         </div>
       </div>
     </button>

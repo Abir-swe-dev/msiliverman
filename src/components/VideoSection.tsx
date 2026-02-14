@@ -1,10 +1,17 @@
 import { Play, SkipForward, Maximize2 } from 'lucide-react';
+import { useState } from 'react';
 import { AppStoreButtons } from './AppStoreButtons';
 import { SoundPreviewButton } from './SoundPreviewButton';
 import OceanAireMusic from '../assets/TR-OAC.mst13.mp3';
 import ForestRainMusic from '../assets/TR-Rain-lite.mst13.mp3';
 
 export function VideoSection() {
+  const [activePreview, setActivePreview] = useState<string | null>(null);
+
+  const togglePreview = (id: string) => {
+    setActivePreview(prev => prev === id ? null : id);
+  };
+
   return (
     <div className="flex flex-col gap-6 w-full max-w-[380px] mx-auto lg:mx-0">
       {/* Video Player */}
@@ -67,8 +74,20 @@ export function VideoSection() {
 
       {/* Sound Previews */}
       <div className="space-y-4">
-        <SoundPreviewButton title="Ocean Aire" subtitle="calm" audioSrc={OceanAireMusic} />
-        <SoundPreviewButton title="Forest Rain" subtitle="lite" audioSrc={ForestRainMusic} />
+        <SoundPreviewButton
+          title="Ocean Aire"
+          subtitle="calm"
+          audioSrc={OceanAireMusic}
+          isActive={activePreview === 'ocean'}
+          onToggle={() => togglePreview('ocean')}
+        />
+        <SoundPreviewButton
+          title="Forest Rain"
+          subtitle="lite"
+          audioSrc={ForestRainMusic}
+          isActive={activePreview === 'forest'}
+          onToggle={() => togglePreview('forest')}
+        />
       </div>
 
       {/* Bottom App Store Buttons */}

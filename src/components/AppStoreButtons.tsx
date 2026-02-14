@@ -11,12 +11,12 @@ export function AppStoreButtons({
 }: AppStoreButtonsProps) {
   const baseStyles = 'flex items-center gap-3 px-3 py-1.5 rounded-lg transition-all duration-300 w-[180px]';
   const defaultStyles = 'bg-black border border-white/20 hover:bg-black/80';
-  const glowStyles = 'bg-black border-2 border-[#7CFF00] shadow-[0_0_15px_rgba(124,255,0,0.4)] hover:shadow-[0_0_25px_rgba(124,255,0,0.6)]';
+  const glowStyles = 'bg-black border-2 border-[#FFD700] shadow-[0_0_15px_rgba(255,215,0,0.4)] hover:shadow-[0_0_25px_rgba(255,215,0,0.6)]';
 
   const buttonClass = `${baseStyles} ${variant === 'glow' ? glowStyles : defaultStyles}`;
 
   return (
-    <div className={`flex flex-col gap-2 ${className}`}>
+    <div className={`flex flex-col gap-2 font-body ${className}`}>
       {/* Google Play Button */}
       <button className={buttonClass}>
         <div className="w-8 h-8 flex items-center justify-center">
@@ -25,8 +25,8 @@ export function AppStoreButtons({
           </svg>
         </div>
         <div className="text-left">
-          <div className="text-[9px] uppercase text-gray-400 font-bold leading-none">GET IT ON</div>
-          <div className="text-[17px] font-bold text-white leading-tight">Google Play</div>
+          <div className="text-[9px] uppercase text-gray-400 font-bold leading-none tracking-tight">GET IT ON</div>
+          <div className="text-[20px] font-bold text-white leading-none">Google Play</div>
         </div>
       </button>
 
@@ -38,8 +38,8 @@ export function AppStoreButtons({
           </svg>
         </div>
         <div className="text-left">
-          <div className="text-[9px] uppercase text-gray-400 font-bold leading-none">Download on the</div>
-          <div className="text-[17px] font-bold text-white leading-tight">App Store</div>
+          <div className="text-[9px] uppercase text-gray-400 font-bold leading-none tracking-tight">Download on the</div>
+          <div className="text-[20px] font-bold text-white leading-none">App Store</div>
         </div>
       </button>
     </div>

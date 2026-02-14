@@ -5,70 +5,70 @@
 /* Kallisto Custom Font */
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Thin.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Thin.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Thin_Italic.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Thin_Italic.otf') format('opentype');
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Light.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Light_Italic.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Light_Italic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Medium.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Medium_Italic.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Medium_Italic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Bold.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Bold_Italic.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Bold_Italic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Heavy.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Heavy.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Kallisto';
-  src: url('/src/assets/fonts/custom/Kallisto_Heavy_Italic.otf') format('opentype');
+  src: url('./assets/fonts/custom/Kallisto_Heavy_Italic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
 }
@@ -76,8 +76,22 @@
 /* Seravek Custom Font */
 @font-face {
   font-family: 'Seravek';
-  src: url('/src/assets/fonts/custom/Seravek.ttc');
-  font-weight: normal;
+  src: url('./assets/fonts/custom/Seravek.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./assets/fonts/custom/Seravek.ttc');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: url('./assets/fonts/custom/Seravek.ttc');
+  font-weight: 900;
   font-style: normal;
 }
 

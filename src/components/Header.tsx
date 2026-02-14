@@ -3,12 +3,12 @@ export function Header() {
     <header className="py-6 flex justify-between items-start">
       <div className="flex flex-col">
         <div className="flex items-baseline gap-1">
-          <h1 className="font-heading text-[38px] md:text-[45px] font-black text-white tracking-tighter leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-            tinnitus<span className="text-[#8B8DFF] font-medium">relief</span>
+          <h1 className="font-heading text-[38px] md:text-[45px] text-white tracking-tighter leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            <span className="font-light">tinnitus</span><span className="text-[#8B8DFF] font-black">relief</span>
           </h1>
-          <span className="text-white text-[12px] opacity-70 mb-1 font-medium">by earvana</span>
+          <span className="font-body text-white text-[12px] opacity-70 mb-1 font-medium italic">by earvana</span>
         </div>
-        <p className="font-body text-white text-[10px] uppercase tracking-[0.25em] mt-1 opacity-60 font-medium" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+        <p className="font-body text-black text-[10px] uppercase tracking-[0.25em] mt-1 opacity-80 font-medium" style={{ textShadow: 'none' }}>
           professional masking solution
         </p>
       </div>
@@ -19,7 +19,7 @@ export function Header() {
           <div className="w-10 h-[2.5px] bg-white opacity-80"></div>
           <div className="w-10 h-[2.5px] bg-white opacity-80"></div>
         </button>
-        <div className="text-white text-[10px] text-right mt-4 opacity-60 leading-tight" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+        <div className="text-white text-[10px] text-right mt-4 opacity-60 leading-tight font-body font-medium" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
           endorsed by Harvard Research<br />
           and audiologists
         </div>

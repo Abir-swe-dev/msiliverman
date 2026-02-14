@@ -1,31 +1,14 @@
-import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { LandingPage } from './pages/LandingPage';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 
 export function App() {
-  const [currentPage, setCurrentPage] = useState('landing');
-
   return (
-    <>
-
-      {currentPage === 'landing' && (
-        <LandingPage onNavigate={(page) => setCurrentPage(page)} />
-      )}
-
-      {currentPage === 'privacy' && (
-        <PrivacyPolicy
-          onBack={() => setCurrentPage('landing')}
-          onNavigate={(page) => setCurrentPage(page)}
-        />
-      )}
-
-      {currentPage === 'terms' && (
-        <TermsOfService
-          onBack={() => setCurrentPage('landing')}
-          onNavigate={(page) => setCurrentPage(page)}
-        />
-      )}
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy onBack={() => { }} />} />
+      <Route path="/terms-of-service" element={<TermsOfService onBack={() => { }} />} />
+    </Routes>
   );
 }

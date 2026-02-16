@@ -73,7 +73,7 @@ export function VideoSection() {
       </div>
 
       {/* Sound Previews */}
-      <div className="space-y-4">
+      <div className="space-y-4 mt-20">
         <SoundPreviewButton
           title="Ocean Aire"
           subtitle="calm"
@@ -90,8 +90,8 @@ export function VideoSection() {
         />
       </div>
 
-      {/* Bottom App Store Buttons */}
-      <div className="flex justify-start mt-4">
+      {/* Bottom App Store Buttons - Vertically aligned with "TRY IT" section in left column */}
+      <div className="flex justify-start mt-22 pt-20">
         <AppStoreButtons variant="glow" />
       </div>
     </div>

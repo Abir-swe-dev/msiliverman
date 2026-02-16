@@ -1,22 +1,24 @@
-import React from 'react';
 
 interface AppStoreButtonsProps {
   className?: string;
   variant?: 'default' | 'glow';
+  direction?: 'vertical' | 'horizontal';
 }
 
 export function AppStoreButtons({
   className = '',
-  variant = 'default'
+  variant = 'default',
+  direction = 'vertical'
 }: AppStoreButtonsProps) {
   const baseStyles = 'flex items-center gap-3 px-3 py-1.5 rounded-lg transition-all duration-300 w-[180px]';
   const defaultStyles = 'bg-black border border-white/20 hover:bg-black/80';
   const glowStyles = 'bg-black border-2 border-[#FFD700] shadow-[0_0_15px_rgba(255,215,0,0.4)] hover:shadow-[0_0_25px_rgba(255,215,0,0.6)]';
 
   const buttonClass = `${baseStyles} ${variant === 'glow' ? glowStyles : defaultStyles}`;
+  const containerDirection = direction === 'horizontal' ? 'flex-row' : 'flex-col';
 
   return (
-    <div className={`flex flex-col gap-2 font-body ${className}`}>
+    <div className={`flex ${containerDirection} gap-2 font-body ${className}`}>
       {/* Google Play Button */}
       <button className={buttonClass}>
         <div className="w-8 h-8 flex items-center justify-center">

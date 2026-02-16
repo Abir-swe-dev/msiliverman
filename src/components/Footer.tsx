@@ -9,8 +9,8 @@ export function Footer({ }: FooterProps) {
             <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/5 pt-8">
                     <div className="flex flex-col gap-2">
-                        <h2 className="font-heading text-2xl font-black text-white/90 tracking-tighter lowercase">
-                            tinnitus<span className="text-[#2D6CFF] font-medium">relief</span>
+                        <h2 className="font-logo text-2xl text-white/90 lowercase">
+                            <span className="font-black tracking-[0.08em]">tinnitus</span><span className="text-[#2D6CFF] font-medium tracking-[0.08em]">relief</span>
                         </h2>
                         <p className="text-[10px] text-white/20 uppercase tracking-widest font-bold">
                             professional masking solution by earvana

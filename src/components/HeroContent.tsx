@@ -4,7 +4,7 @@ export function HeroContent() {
   return (
     <div className="flex flex-col text-left max-w-2xl px-4 lg:px-0">
       {/* Main Headline */}
-      <div className="mb-6">
+      <div className="mb-4">
         <h1 className="font-heading text-[30px] md:text-[38px] font-bold leading-[1.05] tracking-tighter" style={{ textShadow: '2px 2px 5px rgba(0,0,0,0.8)' }}>
           <span className="text-[#9DFF00]">750 Million people</span>{' '}
           <span className="text-[#9DFF00] font-medium">suffer from</span>
@@ -17,7 +17,7 @@ export function HeroContent() {
       </div>
 
       {/* Tinnitus Info */}
-      <div className="mb-6 space-y-5">
+      <div className="mb-4 space-y-4">
         <p className="font-body text-white text-[14px] leading-snug font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           <span className="font-black">TINNITUS</span> — to date — is not curable
           <br />
@@ -41,7 +41,7 @@ export function HeroContent() {
       </div>
 
       {/* The Old Way Section */}
-      <div className="mb-8 space-y-5">
+      <div className="mb-6 space-y-4">
         <div className="space-y-1">
           <h3 className="font-heading text-white font-bold text-[15px] md:text-[17px]" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
             The old way: <span className="font-black tracking-wider">white noise audio</span>
@@ -79,7 +79,7 @@ export function HeroContent() {
       </div>
 
       {/* App Intro */}
-      <div className="mb-10">
+      <div className="mb-8">
         <p className="font-body text-white text-[18px] font-light lowercase mb-0 opacity-90" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
           the innovative new
         </p>
@@ -97,7 +97,7 @@ export function HeroContent() {
       </div>
 
       {/* Take a Listen Section */}
-      <div className="mb-10">
+      <div className="mb-8">
         <div className="flex items-center gap-4 mb-2">
           <h3 className="font-body text-[32px] text-black font-bold tracking-tight lowercase" style={{ textShadow: 'none' }}>
             take a listen:
@@ -108,7 +108,7 @@ export function HeroContent() {
           </div>
         </div>
       </div>
-      <p className="font-body text-[#9DFF00] text-[16px] font-bold mb-8 lowercase italic" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
+      <p className="font-body text-[#9DFF00] text-[16px] font-bold mb-6 lowercase italic" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
         ( best in headphones or ear buds )
       </p>
 
@@ -136,7 +136,7 @@ export function HeroContent() {
       </div>
 
       {/* Final CTA */}
-      <div className="mb-16">
+      <div className="mb-12">
         <div className="flex items-center gap-0">
           <h3 className="font-heading text-[24px] font-black text-[#FFD700] uppercase tracking-widest" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             TRY IT FOR 7 days:: FREE

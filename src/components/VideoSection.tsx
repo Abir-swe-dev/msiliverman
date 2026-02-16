@@ -91,7 +91,7 @@ export function VideoSection() {
       </div>
 
       {/* Bottom App Store Buttons - Vertically aligned with "TRY IT" section in left column */}
-      <div className="flex justify-start mt-22 pt-20">
+      <div className="flex justify-start mt-8">
         <AppStoreButtons variant="glow" />
       </div>
     </div>

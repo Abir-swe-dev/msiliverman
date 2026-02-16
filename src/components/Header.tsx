@@ -1,14 +1,24 @@
+import shading from "../assets/shading.svg";
 export function Header() {
   return (
-    <header className="py-6 flex justify-between items-start">
+    <header 
+    className="py-6 flex justify-between items-start bg-cover bg-center w-full h-[35rem] pb-0 px-6 md:px-12 lg:px-16"   
+    // className="py-6 flex justify-between items-start bg-cover bg-center w-full h-64"
+      // style={{ backgroundImage: `url(${shading})` }}
+          //  className="py-8 md:py-10 flex justify-between items-start bg-cover bg-center w-full h-[28rem] md:h-[32rem] pb-0 px-6 md:px-12 lg:px-16"   
+      style={{ 
+        backgroundImage: `url(${shading})`,
+        backgroundPosition: 'center top'
+      }}
+    >
       <div className="flex flex-col">
         <div className="flex items-baseline gap-1">
-          <h1 className="font-logo text-[38px] md:text-[45px] text-white leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-            <span className="font-black tracking-[0.08em]">tinnitus</span><span className="text-[#8B8DFF] font-medium tracking-[0.08em]">relief</span>
+          <h1 className="font-heading text-[38px] md:text-[45px] text-white tracking-tighter leading-none" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+            <span className="font-light">tinnitus</span><span className="text-[#8B8DFF] font-black">relief</span>
           </h1>
           <span className="font-body text-white text-[12px] opacity-70 mb-1 font-medium italic">by earvana</span>
         </div>
-        <p className="font-body text-black text-[10px] tracking-[0.25em] mt-1 opacity-80 font-medium" style={{ textShadow: 'none' }}>
+        <p className="font-body text-black text-[10px] uppercase tracking-[0.25em] mt-1 opacity-80 font-medium" style={{ textShadow: 'none' }}>
           professional masking solution
         </p>
       </div>
@@ -26,4 +36,6 @@ export function Header() {
       </div>
     </header>
   );
+
 }
+

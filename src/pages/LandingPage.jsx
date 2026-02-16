@@ -31,10 +31,13 @@ export function LandingPage() {
 
       {/* Main Content Container */}
       <div className="relative z-10 w-full">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 mb-20">
-          <Header />
+        <div className=" mx-auto  mb-20">
+        
+            <Header />
+        
+          
 
-          <main className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+          <main className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 lg:px-20 -mt-[240px]">
             {/* Left Column (Text) */}
             <div className="lg:col-span-5">
               <HeroContent />

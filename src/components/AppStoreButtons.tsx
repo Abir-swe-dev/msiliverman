@@ -1,3 +1,8 @@
+import GooglePlayImage from '../assets/google-play.png';
+import AppStoreImage from '../assets/app-store.png';
+
+
+
 
 interface AppStoreButtonsProps {
   className?: string;
@@ -32,7 +37,7 @@ export function AppStoreButtons({
   return (
     <div className={`flex ${containerDirection} ${isGlow ? 'gap-2' : 'gap-2'} font-body ${className}`}>
       {/* Google Play Button */}
-      <ButtonWrapper isGlow={isGlow}>
+      {/* <ButtonWrapper isGlow={isGlow}>
         <button className={buttonClass}>
           <div className="w-8 h-8 flex items-center justify-center">
             <svg viewBox="0 0 24 24" className="w-full h-full" fill="white">
@@ -46,8 +51,11 @@ export function AppStoreButtons({
         </button>
       </ButtonWrapper>
 
+<img src={GooglePlayImage} alt="Get it on Google Play" className="h-10 w-auto object-contain" />
+<img src={AppStoreImage} alt="Download on the App Store" className="h-10 w-auto object-contain" /> */}
+
       {/* App Store Button */}
-      <ButtonWrapper isGlow={isGlow}>
+      {/* <ButtonWrapper isGlow={isGlow}>
         <button className={buttonClass}>
           <div className="w-8 h-8 flex items-center justify-center text-white">
             <svg viewBox="0 0 24 24" className="w-full h-full" fill="white">
@@ -59,7 +67,25 @@ export function AppStoreButtons({
             <div className="text-[20px] font-bold text-white leading-none">App Store</div>
           </div>
         </button>
-      </ButtonWrapper>
+      </ButtonWrapper> */}
+
+
+      <ButtonWrapper isGlow={isGlow}>
+  <button className={buttonClass}>
+    <div className="bg-black rounded-xl p-1 flex items-center justify-center">
+      <img src={GooglePlayImage} alt="Get it on Google Play" className=" " />
+    </div>
+  </button>
+</ButtonWrapper>
+
+{/* App Store Button */}
+<ButtonWrapper isGlow={isGlow}>
+  <button className={buttonClass}>
+    <div className="bg-black rounded-xl p-1  flex items-center justify-center">
+      <img src={AppStoreImage} alt="Download on the App Store" className="object-contain" />
+    </div>
+  </button>
+</ButtonWrapper>
     </div>
   );
 }

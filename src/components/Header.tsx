@@ -64,7 +64,7 @@ export function Header() {
       {/* LEFT SIDE (Logo + Text) */}
       <div className="flex flex-col z-10 max-w-[75%]">
         <div  className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <h1
+          {/* <h1
             className="
               font-gruppo font-bold text-white leading-none
               text-[28px] sm:text-[36px] md:text-[50px] lg:text-[65px]
@@ -83,8 +83,28 @@ export function Header() {
             >
               relief
             </span>
+          </h1> */}
+  <h1
+            className="font-gruppo font-bold text-white leading-none flex items-baseline gap-0"
+          >
+            <span
+              className="font-black text-white tracking-[0.08em] text-[28px] sm:text-[36px] md:text-[50px] lg:text-[65px]"
+              style={{
+                textShadow:
+                  '0 0 20px rgba(100,200,255,0.6), 0 0 40px rgba(80,180,255,0.3), 2px 2px 6px rgba(0,0,0,0.5)'
+              }}
+            >
+              tinnitus
+            </span>
+            <span
+              className="font-normal text-[#0000FF] tracking-normal text-[18px] sm:text-[22px] md:text-[32px] lg:text-[40px]"
+              style={{
+                textShadow: '1px 1px 4px rgba(0,0,0,0.4)'
+              }}
+            >
+              relief
+            </span>
           </h1>
-
           <span
             className="
               font-gruppo italic font-bold opacity-70 text-white
@@ -98,7 +118,7 @@ export function Header() {
 
         <p
           className="
-            font-gruppo uppercase font-bold opacity-80 text-black
+            font-gruppo   opacity-80 text-black
             text-[10px] sm:text-[12px] md:text-[14px]
             tracking-[0.18em]
             mt-3 md:mt-4

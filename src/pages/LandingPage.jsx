@@ -31,13 +31,15 @@ export function LandingPage() {
 
       {/* Main Content Container */}
       <div className="relative z-10 w-full">
-        <div className=" mx-auto  mb-20">
+        <div className=" mx-auto  ">
 
           <Header />
 
 
+          <section className="-mt-[300px] lg:-mt-[250px] relative z-20">
+          {/* <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-20 lg:px-24 xl:px-40 -mt-36 lg:mt-4 "> */}
+             <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-20 lg:px-24 xl:px-40">
 
-          <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-20 lg:px-24 xl:px-40 -mt-36 lg:mt-4">
             {/* Left Column (Text) */}
             <div className="lg:col-span-5">
               <HeroContent />
@@ -48,6 +50,10 @@ export function LandingPage() {
               <VideoSection />
             </div>
           </main>
+
+          </section>
+
+          
         </div>
 
         <Footer />

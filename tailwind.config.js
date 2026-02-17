@@ -16,7 +16,8 @@ module.exports = {
       fontFamily: {
         logo: ["Kallisto", "sans-serif"],
         heading: ["Kallisto", "sans-serif"],
-        body: ["Seravek", "sans-serif"],
+        body: ["Kallisto", "sans-serif"],
+        gruppo: ["Kallisto", "sans-serif"],
       },
       colors: {
         // Tinnitus Relief Design System - Forest + Mist Theme

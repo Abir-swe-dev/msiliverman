@@ -32,19 +32,19 @@ export function LandingPage() {
       {/* Main Content Container */}
       <div className="relative z-10 w-full">
         <div className=" mx-auto  mb-20">
-        
-            <Header />
-        
-          
 
-          <main className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 lg:px-20 -mt-[240px]">
+          <Header />
+
+
+
+          <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-20 lg:px-24 xl:px-40 -mt-36 lg:mt-4">
             {/* Left Column (Text) */}
             <div className="lg:col-span-5">
               <HeroContent />
             </div>
 
             {/* Right Column (Video/Interactive) */}
-            <div className="lg:col-span-7 pt-8 lg:pt-20">
+            <div className="lg:col-span-7 pt-4 lg:pt-20">
               <VideoSection />
             </div>
           </main>

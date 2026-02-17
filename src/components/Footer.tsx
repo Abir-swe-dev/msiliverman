@@ -6,7 +6,7 @@ interface FooterProps {
 export function Footer({ }: FooterProps) {
     return (
         <footer className="w-full relative bg-gradient-to-t from-black via-[#05110B] to-transparent pt-32 pb-12">
-            <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20">
+            <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 xl:px-40">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/5 pt-8">
                     <div className="flex flex-col gap-2">
                         <h2 className="font-logo text-2xl text-white/90 lowercase">

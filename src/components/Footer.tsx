@@ -4,6 +4,13 @@ interface FooterProps {
 }
 
 export function Footer({ }: FooterProps) {
+    const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+
     return (
         <footer className="w-full relative bg-gradient-to-t from-black via-[#05110B] to-transparent pt-32 pb-12">
             <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 xl:px-40">
@@ -19,18 +26,21 @@ export function Footer({ }: FooterProps) {
 
                     <div className="flex gap-8 text-[11px] font-medium text-white/40 uppercase tracking-widest">
                         <Link
+                        onClick={scrollToTop}
                             to="/privacy-policy"
                             className="hover:text-[#8FFF20] transition-colors uppercase tracking-widest"
                         >
                             Privacy Policy
                         </Link>
                         <Link
+                            onClick={scrollToTop}
                             to="/terms-of-service"
                             className="hover:text-[#8FFF20] transition-colors uppercase tracking-widest"
                         >
                             Terms of Service
                         </Link>
                         <Link
+                        onClick={scrollToTop}
                             to="/faq"
                             className="hover:text-[#8FFF20] transition-colors uppercase tracking-widest"
                         >

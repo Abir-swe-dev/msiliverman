@@ -43,6 +43,8 @@
 import shading from "../assets/shading.svg";
 
 export function Header() {
+
+  
   return (
     <header
       className="
@@ -61,7 +63,7 @@ export function Header() {
     >
       {/* LEFT SIDE (Logo + Text) */}
       <div className="flex flex-col z-10 max-w-[75%]">
-        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+        <div  className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
           <h1
             className="
               font-gruppo font-bold text-white leading-none

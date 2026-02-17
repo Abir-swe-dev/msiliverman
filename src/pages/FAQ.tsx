@@ -447,6 +447,7 @@ function AccordionItem({ q, a, index }) {
 }
 
 export function FAQ() {
+    
     return (
         <div className="min-h-screen w-full relative overflow-x-hidden bg-[#0E2A1F]">
             {/* Background Image - Fixed — same as LandingPage */}

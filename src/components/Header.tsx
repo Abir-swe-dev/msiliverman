@@ -1,50 +1,6 @@
-// import shading from "../assets/shading.svg";
-// export function Header() {
-//   return (
-//     <header
-//       className="flex justify-between items-start bg-cover bg-center w-full h-[20rem] pb-0 px-6 md:px-12 lg:px-24 xl:px-40 relative"
-//       // style={{ backgroundImage: `url(${shading})` }}
-//       style={{
-//         backgroundImage: `url(${shading})`,
-//         backgroundPosition: 'center top'
-//       }}
-//     >
-//       <div className="flex flex-col relative z-10 mt-4 md:mt-8">
-//         <div className="flex items-baseline gap-1">
-//           <h1 className="font-gruppo text-[42px] md:text-[65px] text-white leading-none font-bold" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
-//             <span className="tracking-[0.2em]">tinnitus</span><span className="text-[#8B8DFF] font-black tracking-normal text-[26px] md:text-[40px]">relief</span>
-//           </h1>
-//           <span className="font-gruppo text-white text-[14px] md:text-[20px] opacity-70 mb-1 font-bold italic">by earvana</span>
-//         </div>
-//         <p className="font-gruppo text-black text-[12px] md:text-[14px] uppercase tracking-[0.25em] mt-3 md:mt-5 opacity-80 font-bold" style={{ textShadow: 'none' }}>
-//           professional masking solution
-//         </p>
-//       </div>
-
-//       <div className="flex flex-col items-center z-10 mt-5 md:absolute md:left-1/2 md:-translate-x-1/2 md:top-10 md:mt-0">
-//         <button className="flex flex-col gap-1.5 md:gap-2 p-2">
-//           <div className="w-12 md:w-16 h-[2px] md:h-[3px] bg-white opacity-80"></div>
-//           <div className="w-12 md:w-16 h-[2px] md:h-[3px] bg-white opacity-80"></div>
-//           <div className="w-12 md:w-16 h-[2px] md:h-[3px] bg-white opacity-80"></div>
-//         </button>
-//         <div className="text-white text-[10px] md:text-[12px] text-center mt-3 md:mt-5 opacity-70 leading-tight font-body font-medium" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-//           endorsed by Harvard Research<br />
-//           and audiologists
-//         </div>
-//       </div>
-//     </header>
-//   );
-
-// }
-
-
-
-
 import shading from "../assets/shading.svg";
-
+import GeminiBgremove from "../assets/Gemini-bgremove.png";
 export function Header() {
-
-  
   return (
     <header
       className="
@@ -63,35 +19,13 @@ export function Header() {
     >
       {/* LEFT SIDE (Logo + Text) */}
       <div className="flex flex-col z-10 max-w-[75%]">
-        <div  className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          {/* <h1
-            className="
-              font-gruppo font-bold text-white leading-none
-              text-[28px] sm:text-[36px] md:text-[50px] lg:text-[65px]
-            "
-            style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
-          >
-            <span className="tracking-[0.12em] block sm:inline">
-              tinnitus
-            </span>
-            <span
-              className="
-                text-[#2D6CFF] font-black tracking-normal
-                text-[18px] sm:text-[22px] md:text-[32px] lg:text-[40px]
-                sm:ml-2 block sm:inline
-              "
-            >
-              relief
-            </span>
-          </h1> */}
-  <h1
-            className="font-gruppo font-bold text-white leading-none flex items-baseline gap-0"
-          >
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <h1 className="font-gruppo font-bold text-white leading-none flex items-baseline gap-0">
             <span
               className="font-black text-white tracking-[0.08em] text-[28px] sm:text-[36px] md:text-[50px] lg:text-[65px]"
               style={{
                 textShadow:
-                  '0 0 20px rgba(100,200,255,0.6), 0 0 40px rgba(80,180,255,0.3), 2px 2px 6px rgba(0,0,0,0.5)'
+                  "0 0 20px rgba(100,200,255,0.6), 0 0 40px rgba(80,180,255,0.3), 2px 2px 6px rgba(0,0,0,0.5)",
               }}
             >
               tinnitus
@@ -99,20 +33,83 @@ export function Header() {
             <span
               className="font-normal text-[#0000FF] tracking-normal text-[18px] sm:text-[22px] md:text-[32px] lg:text-[40px]"
               style={{
-                textShadow: '1px 1px 4px rgba(0,0,0,0.4)'
+                textShadow:
+                  "2px 4px 6px rgba(0,0,0,0.5), 2px 4px 12px rgba(0,0,120,0.3)",
               }}
             >
               relief
             </span>
+            {/* <span
+              className="font-normal text-[#0000FF] tracking-normal text-[18px] sm:text-[22px] md:text-[32px] lg:text-[40px]"
+              style={{
+                textShadow: "1px 1px 4px rgba(0,0,0,0.4)",
+              }}
+            >
+              relief
+            </span> */}
           </h1>
-          <span
+          {/* <span
             className="
-              font-gruppo italic font-bold opacity-70 text-white
+              font-gruppo font-normal opacity-70 text-white
               text-[11px] sm:text-[14px] md:text-[18px]
               mt-1 sm:mt-0
             "
           >
-            by earvana
+            <span className="text-[#808080]">by</span>{" "}
+            <span className="">
+              {" "}
+              <img
+                className="-mt-2 ml-3"
+                src={GeminiBgremove}
+                alt=""
+                height={50}
+                width={50}
+              />
+              earvana
+            </span>
+          </span> */}
+          <span className="font-gruppo font-normal opacity-70 text-white text-[11px] sm:text-[14px] md:text-[18px] mt-1 sm:mt-0 flex items-baseline">
+            <span className="text-[#808080] mr-1">by</span>
+
+            {/* <span className="relative inline-flex items-baseline">
+              
+              <span>ear</span>
+
+              
+              <span className="relative inline-block  ">
+                <img
+                  src={GeminiBgremove}
+                  alt=""
+                  className="absolute left-1/2 -translate-x-1/2 pointer-events-none "
+                  style={{
+                    bottom: "50%",
+                    width: "40px",
+                    height: "40px",
+                    marginBottom: "1px",
+                  }}
+                />
+                v
+              </span>
+              <span>ana</span>
+            </span> */}
+            <span className="relative inline-flex items-baseline ml-1">
+              {/* Note image floating above entire "earvana" text */}
+              <img
+                src={GeminiBgremove}
+                alt=""
+                className="pointer-events-none"
+                style={{
+                  position: "absolute",
+                  bottom: "50%",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  width: "55px",
+                  height: "auto",
+                  marginBottom: "2px",
+                }}
+              />
+              <span>earvana</span>
+            </span>
           </span>
         </div>
 
@@ -145,7 +142,8 @@ export function Header() {
           "
           style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
         >
-          endorsed by Harvard Research<br />
+          endorsed by Harvard Research
+          <br />
           and audiologists
         </div>
       </div>

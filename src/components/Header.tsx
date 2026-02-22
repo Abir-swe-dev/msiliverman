@@ -69,7 +69,7 @@ export function Header() {
             </span>
           </span> */}
           <span className="font-gruppo font-normal opacity-70 text-white text-[11px] sm:text-[14px] md:text-[18px] mt-1 sm:mt-0 flex items-baseline">
-            <span className="text-[#808080] mr-1">by</span>
+            <span className="text-[silver] mr-1">by</span>
 
             {/* <span className="relative inline-flex items-baseline">
               
